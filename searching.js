@@ -3,7 +3,7 @@
 // 1 . we can add export to every function 
 // 2 . at end export and { all names }
 
-function linearSearch(arr, t){
+export function linearSearch(arr, t){
     for(let i =0;i<arr.length -1;i++){
         if(arr[i] == t){
             return "Yes";
@@ -12,7 +12,7 @@ function linearSearch(arr, t){
     return "No";
 }
 
-function binarySearch(arr, target){
+export function binarySearch(arr, target){
     let l = 0, h = arr.size - 1;
     while(l<=h){
         let mid = l + (r - l)/2;
@@ -28,4 +28,8 @@ function binarySearch(arr, target){
 }
 
 
-export {linearSearch , binarySearch}
+// export {linearSearch , binarySearch} not much used in industry
+
+// in common js 
+
+// module.exports = {linearSearch , binarySearch}

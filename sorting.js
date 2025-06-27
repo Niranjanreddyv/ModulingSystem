@@ -14,3 +14,8 @@ function bubbleSort(arr){
 export default bubbleSort;
 
 // this most used default exporting format 
+
+
+// in common js export
+
+// module.exports = bubbleSort
